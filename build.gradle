@@ -77,11 +77,6 @@ task quickBuild {
     dependsOn ':Corona-Warn-App:lintDeviceRelease'
     dependsOn ':Corona-Warn-App:ktlintDeviceReleaseCheck'
     dependsOn ':Corona-Warn-App:detekt'
-    afterTest { descriptor, result ->
-        if (result as String == 'FAILURE') {
-            Desktop.desktop.browse(uri("$testReportPath/index.html"))
-        }
-    }
 }
 
 task quickBuildTest {
