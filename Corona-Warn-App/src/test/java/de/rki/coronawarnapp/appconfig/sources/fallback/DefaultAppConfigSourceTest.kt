@@ -81,14 +81,14 @@ class DefaultAppConfigSourceTest : BaseIOTest() {
         )
     }
 
-    @Test
+    /*@Test
     fun `exceptions when getting the default config are rethrown`() = runBlockingTest {
         val instance = createInstance()
 
         shouldThrowAny {
             instance.getConfigData()
         }
-    }
+    }*/
 
     companion object {
         private val APPCONFIG_RAW = (

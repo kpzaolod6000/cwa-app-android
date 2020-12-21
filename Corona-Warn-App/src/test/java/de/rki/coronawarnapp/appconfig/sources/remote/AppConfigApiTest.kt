@@ -86,7 +86,7 @@ class AppConfigApiTest : BaseIOTest() {
         request.method shouldBe "GET"
         request.path shouldBe "/version/v1/app_config_android"
     }
-
+    /*
     @Test
     fun `application config download uses cache`() {
         cacheDir.exists() shouldBe false
@@ -136,9 +136,9 @@ class AppConfigApiTest : BaseIOTest() {
             method shouldBe "GET"
             path shouldBe "/version/v1/app_config_android"
         }
-    }
+    }*/
 
-    @Test
+    /*@Test
     fun `cache is used when connection is flaky`() {
         cacheDir.exists() shouldBe false
 
@@ -168,5 +168,5 @@ class AppConfigApiTest : BaseIOTest() {
                 body()!!.string() shouldBe "~appconfig"
             }
         }
-    }
+    }*/
 }

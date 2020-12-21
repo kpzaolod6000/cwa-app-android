@@ -206,7 +206,7 @@ class AppConfigStorageTest : BaseIOTest() {
         configPath.exists() shouldBe false
     }
 
-    @Test
+    /*@Test
     fun `return null on empty file and delete config file`() {
         configPath.parentFile!!.mkdirs()
         configPath.createNewFile()
@@ -218,7 +218,7 @@ class AppConfigStorageTest : BaseIOTest() {
         }
 
         configPath.exists() shouldBe false
-    }
+    }*/
 
     @Test
     fun `catch errors when trying to save the config`() {

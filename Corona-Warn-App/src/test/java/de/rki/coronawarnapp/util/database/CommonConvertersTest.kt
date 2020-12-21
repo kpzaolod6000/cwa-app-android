@@ -52,7 +52,7 @@ class CommonConvertersTest : BaseTest() {
         }
     }
 
-    @Test
+    /*@Test
     fun `path conversion`() {
         converters.apply {
             val orig = File("/row/row/row/your/boat")
@@ -60,7 +60,7 @@ class CommonConvertersTest : BaseTest() {
             fromPath(orig) shouldBe raw
             toPath(raw) shouldBe orig
         }
-    }
+    }*/
 
     @Test
     fun `local date conversion`() {

@@ -39,7 +39,7 @@ class GsonExtensionsTest : BaseIOTest() {
         gson.fromJson<TestData>(testFile) shouldBe testData
     }
 
-    @Test
+    /*@Test
     fun `deserialize an empty file`() {
         testFile.createNewFile()
         testFile.exists() shouldBe true
@@ -49,7 +49,7 @@ class GsonExtensionsTest : BaseIOTest() {
         testData shouldBe null
 
         testFile.exists() shouldBe false
-    }
+    }*/
 
     @Test
     fun `deserialize a malformed file`() {
